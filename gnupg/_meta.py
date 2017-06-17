@@ -543,7 +543,7 @@ class GPGBase(object):
         """
         ## see TODO file, tag :io:makeargs:
         cmd = [self.binary,
-               '--no-options --no-emit-version --no-tty --status-fd 2']
+               '--pinentry-mode loopback --no-options --no-emit-version --no-tty --status-fd 2']
 
         if self.homedir: cmd.append('--homedir "%s"' % self.homedir)
 
